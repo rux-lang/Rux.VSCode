@@ -1,0 +1,25 @@
+{
+  "name": "rux-lang",
+  "displayName": "Rux Language",
+  "description": "Syntax highlighting for Rux programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "rux",
+      "aliases": ["Rux", "rux"],
+      "extensions": [".rx"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "rux",
+      "scopeName": "source.rux",
+      "path": "./syntaxes/rux.tmLanguage.json"
+    }]
+  }
+}
